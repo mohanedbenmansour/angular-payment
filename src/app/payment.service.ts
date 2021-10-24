@@ -27,7 +27,7 @@ export class PaymentService {
       'Content-Type': 'application/json',
       'Authorization': "Bearer MTU1NzgwNTM6dGVzdHBhc3N3b3JkX3JCU3lrWXBxNkRMYW1GQVNXS1dGdUZtdlR6MU5lUkRiZ2ROT2ZkTnEwN2UxaA=="
     })
-    return this.http.post("https://epaync.nc/api-payment/V4/Charge/CreatePayment",this.body,{ headers: headers });
+    return this.http.post("https://epaync.nc/api-payment/V4/Charge/CreatePayment",this.body,{  headers });
   }
 
 }
